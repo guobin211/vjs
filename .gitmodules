@@ -1,3 +1,6 @@
 [submodule "quickjs"]
 	path = quickjs
-	url = git@github.com:guobin211/quickjs.git
+	url = git@github.com:bellard/quickjs.git
+[submodule "test262"]
+	path = test262
+	url = git@github.com:tc39/test262.git
