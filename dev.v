@@ -1,4 +1,4 @@
-module main
+module vjs
 
 import os
 import arrays
@@ -20,7 +20,7 @@ fn get_all_files(dir string) []string {
 fn sync_ts_to_v() {
 	cwd := os.getwd()
 	parent_dir := os.dir(cwd)
-	mut target_dir := '${cwd}/src'
+	mut target_dir := '${cwd}/src/vjs'
 	mut source_src := '${parent_dir}/jsscript/src'
 	files := get_all_files(source_src)
 	target_files := files.map(fn (file string) string {
@@ -55,7 +55,14 @@ fn main() {
 	if args.contains('--sync') {
 		sync_ts_to_v()
 	} else {
-		println('use --sync to sync ts to v')
-		sync_ts_to_v()
+		println('
+use --sync to sync ts to v
+
+examples:
+  v run dev.v --sync
+  v run dev.v --test
+  v run dev.v --pass
+  v run dev.v --gcc
+')
 	}
 }
