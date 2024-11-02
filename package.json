@@ -23,7 +23,7 @@
         "fmt": "v fmt -w . && biome format --write .",
         "lint": "",
         "build": "",
-        "dev": ""
+        "dev": "v run dev.v --sync"
     },
     "author": "michaelbguo",
     "license": "MIT"
