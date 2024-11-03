@@ -8,5 +8,8 @@
     "cSpell.words": ["michaelbguo", "quickjs", "vlang"],
     "[v]": {
         "editor.defaultFormatter": "VOSCA.vscode-v-analyzer"
+    },
+    "[ignore]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
     }
 }
